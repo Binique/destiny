@@ -25,4 +25,15 @@ class  StoryBrain {
         " Recommencer", ""),
 
   ];
+  String getQuestionText() {
+    return _Questions[questionNumber].listQuestions;
+  }
+
+  String getButtonText() {
+    return _Questions[questionNumber].button;
+  }
+
+  String getButton1Text() {
+    return _Questions[questionNumber].button1;
+  }
 }

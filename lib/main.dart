@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'storyBrain.dart';
+StoryBrain storyBrain = StoryBrain();
 void main() {
   runApp(
     MaterialApp(
@@ -31,7 +33,7 @@ class _StoryState extends State<Story> {
           Expanded(
             flex: 5,
             child: Center(
-              child: Text('Questions',
+              child: Text(storyBrain.getQuestionText(),
                 style: TextStyle(color: Colors.white,fontSize: 25.0),textAlign: TextAlign.center,
               ),
             ),
@@ -44,7 +46,7 @@ class _StoryState extends State<Story> {
                 onPressed: () {
 
                 },
-                child:Text('Réponse 1',
+                child:Text(storyBrain.getButtonText(),
                     style: TextStyle(color: Colors.white,)
                 ),
               ),
@@ -59,7 +61,7 @@ class _StoryState extends State<Story> {
 
 
                   },
-                  child:Text('Réponse 2',
+                  child:Text(storyBrain.getButton1Text(),
                       style: TextStyle(color: Colors.white,)
                   ),
                 ),
