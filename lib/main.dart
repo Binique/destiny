@@ -54,6 +54,9 @@ class _StoryState extends State<Story> {
               ),
             ),
           ),
+          Visibility(
+          visible: storyBrain.getButton1Text() != "",
+          child:
           Expanded(
               child:Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -71,6 +74,7 @@ class _StoryState extends State<Story> {
                 ),
               ),
             ),
+    ),
         ]
     );
   }
