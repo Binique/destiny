@@ -36,4 +36,45 @@ class  StoryBrain {
   String getButton1Text() {
     return _Questions[questionNumber].button1;
   }
+  int nextQuestion() {
+    return questionNumber++;
+  }
+
+  void checkButton() {
+    if (questionNumber == 0) {
+      nextQuestion();
+    }
+    else if (questionNumber == 1) {
+      questionNumber = 3;
+    }
+    else if (questionNumber == 2) {
+      questionNumber = 4;
+    }
+
+  }
+
+  int nextQuestion2() {
+    return questionNumber = 2;
+  }
+
+  void checkButton2() {
+    if (questionNumber == 0) {
+      nextQuestion2();
+    }
+    else if (questionNumber == 2) {
+      questionNumber = 5;
+    }
+    else if (questionNumber == 1) {
+      questionNumber = 2;
+    }
+    else if (questionNumber == 4) {
+      questionNumber = 0;
+    }
+    else if (questionNumber == 5){
+      questionNumber = 0;
+    }
+    else if (questionNumber == 3){
+      questionNumber = 0;
+    }
+  }
 }

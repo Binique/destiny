@@ -44,7 +44,9 @@ class _StoryState extends State<Story> {
               child: TextButton(
                 style: TextButton.styleFrom(backgroundColor: Colors.indigo.shade500),
                 onPressed: () {
-
+                setState(() {
+                  storyBrain.checkButton2();
+                });
                 },
                 child:Text(storyBrain.getButtonText(),
                     style: TextStyle(color: Colors.white,)
@@ -58,7 +60,9 @@ class _StoryState extends State<Story> {
                 child: TextButton(
                   style: TextButton.styleFrom(backgroundColor: Colors.indigo.shade500),
                   onPressed: () {
-
+                  setState(() {
+                  storyBrain.checkButton();
+                  });
 
                   },
                   child:Text(storyBrain.getButton1Text(),
