@@ -45,7 +45,7 @@ class _StoryState extends State<Story> {
                 style: TextButton.styleFrom(backgroundColor: Colors.indigo.shade500),
                 onPressed: () {
                 setState(() {
-                  storyBrain.checkButton2();
+                  storyBrain.checkButtonChoice1();
                 });
                 },
                 child:Text(storyBrain.getButtonText(),
@@ -64,7 +64,7 @@ class _StoryState extends State<Story> {
                   style: TextButton.styleFrom(backgroundColor: Colors.indigo.shade500),
                   onPressed: () {
                   setState(() {
-                  storyBrain.checkButton();
+                  storyBrain.checkButtonChoice2();
                   });
 
                   },

@@ -30,19 +30,17 @@ class  StoryBrain {
   }
 
   String getButtonText() {
-    return _Questions[questionNumber].button;
+    return _Questions[questionNumber].choice1;
   }
 
   String getButton1Text() {
-    return _Questions[questionNumber].button1;
-  }
-  int nextQuestion() {
-    return questionNumber++;
+    return _Questions[questionNumber].choice2;
   }
 
-  void checkButton() {
+
+  void checkButtonChoice2() {
     if (questionNumber == 0) {
-      nextQuestion();
+      questionNumber++;
     }
     else if (questionNumber == 1) {
       questionNumber = 3;
@@ -53,13 +51,10 @@ class  StoryBrain {
 
   }
 
-  int nextQuestion2() {
-    return questionNumber = 2;
-  }
 
-  void checkButton2() {
+  void checkButtonChoice1() {
     if (questionNumber == 0) {
-      nextQuestion2();
+      questionNumber = 2;
     }
     else if (questionNumber == 2) {
       questionNumber = 5;
